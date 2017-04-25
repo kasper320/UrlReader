@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sdaacademy.kasperek.andrzej.urlreader.MainActivity">
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@android:color/white">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/urlEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/background_light"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="URL" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_gravity="center_horizontal|left"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:hint="FROM" />
+
+        <EditText
+            android:layout_gravity="center_horizontal|right"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/editText"
+            android:hint="TO" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/get"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="GET"
+        android:onClick="onClick"/>
+</LinearLayout>
